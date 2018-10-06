@@ -7,14 +7,20 @@ namespace XOProject
 {
     public class TradeAnalysis
     {
-        public decimal Sum { get; set; }
+        decimal sum;
+        private decimal _average;
+        private decimal _maximum;
+        private decimal _minimum;
 
-        public decimal Average { get; set; }
+        public decimal Sum { get => sum; set => sum = value; }
 
-        public decimal Maximum { get; set; }
+        public decimal Average { get => _average; set => _average = value; }
 
-        public decimal Minimum { get; set; }
+        public decimal Maximum { get => _maximum; set => _maximum = value; }
+
+        public decimal Minimum { get => _minimum; set => _minimum = value; }
 
         public string Action { get; set; }
+
     }
 }
